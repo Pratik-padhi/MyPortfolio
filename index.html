@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pratik Kumar Padhi - AI Systems Developer, Backend & ML Engineer. Building intelligent software systems with focus on deployment, scalability, and practical ML infrastructure." />
+  <meta name="keywords" content="Pratik Padhi, ML Engineer, Machine Learning, Computer Vision, Python, Data Science, India" />
+  <meta name="author" content="Pratik Kumar Padhi" />
+  <meta name="theme-color" content="#0d0d0d" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pratik Kumar Padhi - ML Engineer & Data Systems" />
+  <meta property="og:description" content="Building end-to-end ML systems and backend-driven AI applications. Computer vision, data pipelines, and scalable inference." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pratikpadhi.dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pratik Kumar Padhi - ML Engineer" />
+  <meta name="twitter:description" content="AI Systems Developer | Backend & ML Engineer | Data Pipelines | Computer Vision" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0d0d'/%3E%3Ctext x='6' y='23' font-family='monospace' font-size='18' font-weight='700' fill='%23a8c5da'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='32' fill='%230d0d0d'/%3E%3Ctext x='32' y='130' font-family='monospace' font-size='110' font-weight='700' fill='%23a8c5da'%3EP%3C/text%3E%3C/svg%3E" />
+
+  <title>Pratik Padhi - AI Systems Developer &amp; Backend ML Engineer</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="scroll-progress" role="progressbar" aria-label="Scroll progress"></div>
+
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- ── NAVBAR ── -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Pratik Padhi - home">
+        <span class="logo-bracket">[</span>pratik<span class="logo-bracket">]</span><span class="logo-cursor" aria-hidden="true"></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"><span class="nav-num" aria-hidden="true">01.</span>about</a></li>
+        <li><a href="#projects"><span class="nav-num" aria-hidden="true">02.</span>projects</a></li>
+        <li><a href="#skills"><span class="nav-num" aria-hidden="true">03.</span>skills</a></li>
+        <li><a href="#contact"><span class="nav-num" aria-hidden="true">04.</span>contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation">
+    <a href="#about"    class="drawer-link"><span class="d-num">01.</span> About</a>
+    <a href="#projects" class="drawer-link"><span class="d-num">02.</span> Projects</a>
+    <a href="#skills"   class="drawer-link"><span class="d-num">03.</span> Skills</a>
+    <a href="#contact"  class="drawer-link"><span class="d-num">04.</span> Contact</a>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section id="hero" aria-label="Introduction">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-eyebrow reveal">Hey there, I'm</p>
+            <h1 class="hero-name reveal"><span class="name-highlight">Pratik Kumar Padhi</span></h1>
+            <p class="hero-role reveal"><span id="typed-role" aria-label="Role: ML Engineer"></span></p>
+            <p class="hero-bio reveal">
+              I build intelligent software systems — from computer vision pipelines to backend-driven ML applications — with a focus on reliability, scalability, and practical deployment.
+            </p>
+            <div class="hero-ctas reveal">
+              <a href="#projects" class="btn-primary">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+                View Projects
+              </a>
+              <a href="https://drive.google.com/file/d/1EJzb4E2AEFJE9ln8_5Ce3onHp7TIopxb/view?usp=sharing" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Open resume in new tab">Resume →</a>
+            </div>
+            <div class="hero-socials reveal">
+              <a href="https://github.com/pratikk-dev" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/pratikpadhi00" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+            <div class="hero-stats reveal" aria-label="Quick stats">
+              <div class="stat-pill"><span class="stat-val">4</span> systems built</div>
+              <div class="stat-pill"><span class="stat-val">FastAPI</span> + PyTorch</div>
+              <div class="stat-pill"><span class="stat-val">ICCAIML</span> 2026 speaker</div>
+              <div class="stat-pill"><span class="stat-val">AWS</span> deployed</div>
+            </div>
+          </div>
+
+          <!-- Decorative code block — hidden on mobile -->
+          <div class="hero-deco reveal" aria-hidden="true">
+            <div class="deco-topbar">
+              <div class="deco-dot"></div>
+              <div class="deco-dot"></div>
+              <div class="deco-dot"></div>
+              <span class="deco-filename">pratik.py</span>
+            </div>
+            <span class="c-cm"># Systems Engineer — Odisha, India</span><br>
+            <span class="c-key">class</span> <span class="c-obj">Pratik</span>(<span class="c-obj">Engineer</span>):<br>
+            <br>
+            &nbsp;&nbsp;<span class="c-key">def</span> <span class="c-fn">__init__</span>(self):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;self.focus = [<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"ML Systems"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Backend APIs"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Data Pipelines"</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;self.university = <span class="c-str">"Centurion University"</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;self.graduating = <span class="c-num">2027</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="c-key">def</span> <span class="c-fn">build</span>(self, problem):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-key">return</span> self.<span class="c-fn">deploy</span>(problem)<br>
+            <br>
+            <span class="c-cm"># currently: shipping practical ML systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── ABOUT ── -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <p class="section-label reveal">01 / about</p>
+        <h2 class="section-title reveal" id="about-title">A bit about me</h2>
+
+        <div class="stats-row reveal" role="list" aria-label="Key metrics">
+          <div class="stat-block" role="listitem" data-tip="Across shipped portfolio systems">
+            <span class="stat-num"><span data-count="4">0</span><span class="stat-suffix">x</span></span>
+            <span class="stat-desc">Projects Shipped</span>
+          </div>
+          <div class="stat-block" role="listitem" data-tip="Best validation result across vision workflows">
+            <span class="stat-num"><span data-count="92">0</span><span class="stat-suffix">%</span></span>
+            <span class="stat-desc">Best Val Accuracy</span>
+          </div>
+          <div class="stat-block" role="listitem" data-tip="Largest structured dataset workflow">
+            <span class="stat-num"><span data-count="10">0</span><span class="stat-suffix">k+</span></span>
+            <span class="stat-desc">Data Points Processed</span>
+          </div>
+          <div class="stat-block" role="listitem" data-tip="FastAPI + Redis setup">
+            <span class="stat-num">&lt;<span data-count="100">0</span><span class="stat-suffix">ms</span></span>
+            <span class="stat-desc">API Response Target</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="reveal">
+              I'm a <strong>BTech student in Data Analysis and Machine Learning with AI</strong> at Centurion University, graduating 2027. I build end-to-end software and ML systems that combine backend engineering, data workflows, and applied machine learning.
+            </p>
+            <p class="reveal">
+              My work spans computer vision, recommendation systems, predictive analytics, and API-driven ML applications. I enjoy working across the full development cycle — from preprocessing and experimentation to deployment and optimization.
+            </p>
+            <p class="reveal">
+              I presented research at <strong>ICCAIML 2026</strong> and continue exploring areas such as retrieval-augmented systems, scalable inference workflows, and applied AI infrastructure.
+            </p>
+            <div class="achievement-row reveal">
+              <div class="badge"><span class="badge-icon">CV</span>Computer Vision</div>
+              <div class="badge"><span class="badge-icon">BE</span>Backend Systems</div>
+              <div class="badge"><span class="badge-icon">ML</span>ML Deployment</div>
+              <div class="badge"><span class="badge-icon">API</span>API Development</div>
+            </div>
+          </div>
+
+          <div class="currently-card reveal">
+            <h4>// currently</h4>
+            <div class="currently-item">
+              <div class="c-label">Building</div>
+              <div class="c-value">ML pipelines, backend APIs, and intelligent web applications</div>
+            </div>
+            <div class="currently-item">
+              <div class="c-label">Exploring</div>
+              <div class="c-value">LLMs, retrieval-augmented systems, inference optimization</div>
+            </div>
+            <div class="currently-item">
+              <div class="c-label">Interested in</div>
+              <div class="c-value">Applied AI Systems, Backend Infrastructure, ML Platforms</div>
+            </div>
+            <div class="currently-item">
+              <div class="c-label">Based in</div>
+              <div class="c-value">Odisha, India</div>
+            </div>
+            <div class="currently-item">
+              <div class="c-label">Graduating</div>
+              <div class="c-value">2027 — Centurion University</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <p class="section-label reveal">02 / projects</p>
+        <h2 class="section-title reveal" id="projects-title">Things I've built</h2>
+        <div class="projects-grid">
+
+          <!-- Recommendation Engine -->
+          <article class="project-card featured reveal">
+            <div class="project-header">
+              <span class="project-name">Recommendation Engine</span>
+              <div class="project-links-row" aria-label="Recommendation Engine links">
+                <a href="https://github.com/pratikk-dev/recommendation-engine" target="_blank" rel="noopener noreferrer" aria-label="Recommendation Engine GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  code
+                </a>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tag tag-lavender">Collaborative Filtering</span>
+              <span class="tag tag-warm">FastAPI</span>
+              <span class="tag tag-mint">Redis</span>
+              <span class="tag tag-blue">PostgreSQL</span>
+            </div>
+            <p class="project-desc">
+              Backend-driven recommendation engine combining similarity scoring, user interaction patterns, and retrieval workflows to deliver low-latency personalized suggestions.
+            </p>
+            <div class="project-note">
+              <span class="project-note-title">Engineering Focus</span>
+              <p>Recommendation quality improved after introducing weighted similarity scoring and Redis caching for repeated queries.</p>
+            </div>
+            <div class="project-tech-detail">
+              <strong>Stack:</strong> FastAPI / Redis caching / collaborative filtering / PostgreSQL / recommendation ranking pipeline
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Caching + ranking workflow</span>
+              <span class="impact-badge">FastAPI + Redis — &lt;100ms target latency</span>
+            </div>
+          </article>
+
+          <!-- Crop Intelligence Platform -->
+          <article class="project-card reveal">
+            <div class="project-header">
+              <span class="project-name">Crop Intelligence Platform</span>
+              <div class="project-links-row" aria-label="Crop Intelligence Platform links">
+                <a href="https://github.com/pratikk-dev/cropsensy" target="_blank" rel="noopener noreferrer" aria-label="Crop Intelligence Platform GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  code
+                </a>
+                <a href="https://cropsensy.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Crop Intelligence Platform live application">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  live
+                </a>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tag tag-blue">Python</span>
+              <span class="tag tag-mint">AWS S3</span>
+              <span class="tag tag-lavender">scikit-learn</span>
+              <span class="tag tag-warm">Pandas</span>
+              <span class="tag tag-blue">Netlify</span>
+            </div>
+            <p class="project-desc">
+              ML-powered web platform analyzing environmental and regional datasets to generate predictive crop suitability insights and data-backed recommendations through an API-driven workflow.
+            </p>
+            <div class="project-note">
+              <span class="project-note-title">Engineering Focus</span>
+              <p>Handling inconsistent environmental data distributions across regions required normalization and feature balancing to stabilize predictions.</p>
+            </div>
+            <div class="project-tech-detail">
+              <strong>Stack:</strong> Random Forest classifier / feature engineering on structured datasets / REST API integration / AWS-hosted assets / Netlify frontend
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Structured data workflow</span>
+              <span class="impact-badge">Random Forest — ~85% validation accuracy</span>
+            </div>
+          </article>
+
+          <!-- Vision-Based Detection System -->
+          <article class="project-card reveal">
+            <div class="project-header">
+              <span class="project-name">Vision-Based Detection System</span>
+              <div class="project-links-row" aria-label="Vision-Based Detection System links">
+                <a href="https://github.com/pratikk-dev/weed-detection" target="_blank" rel="noopener noreferrer" aria-label="Vision-Based Detection System GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  code
+                </a>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tag tag-mint">Computer Vision</span>
+              <span class="tag tag-blue">PyTorch</span>
+              <span class="tag tag-lavender">YOLOv8</span>
+              <span class="tag tag-warm">OpenCV</span>
+            </div>
+            <p class="project-desc">
+              Computer vision pipeline trained to classify and distinguish multiple field object categories using custom-labeled image datasets and optimized inference workflows.
+            </p>
+            <div class="project-note">
+              <span class="project-note-title">Engineering Focus</span>
+              <p>Model performance initially dropped on low-light field images, leading to augmentation-heavy retraining and preprocessing refinement.</p>
+            </div>
+            <div class="project-tech-detail">
+              <strong>Stack:</strong> YOLOv8 fine-tuning / OpenCV preprocessing / augmentation pipelines / PyTorch training workflow
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Inference optimization</span>
+              <span class="impact-badge">YOLOv8 — ~92% validation accuracy</span>
+            </div>
+          </article>
+
+          <!-- Image Classification System -->
+          <article class="project-card reveal">
+            <div class="project-header">
+              <span class="project-name">Image Classification System</span>
+              <div class="project-links-row" aria-label="Image Classification System links">
+                <a href="https://github.com/pratikk-dev/coral-reef-monitor" target="_blank" rel="noopener noreferrer" aria-label="Image Classification System GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  code
+                </a>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tag tag-warm">Image Analysis</span>
+              <span class="tag tag-mint">TensorFlow</span>
+              <span class="tag tag-blue">Streamlit</span>
+              <span class="tag tag-lavender">Grad-CAM</span>
+            </div>
+            <p class="project-desc">
+              Image classification system built for multi-class visual analysis using transfer learning and explainable inference techniques through a lightweight dashboard interface.
+            </p>
+            <div class="project-note">
+              <span class="project-note-title">Engineering Focus</span>
+              <p>Improving generalization across inconsistent underwater image conditions required extensive preprocessing and transfer-learning experimentation.</p>
+            </div>
+            <div class="project-tech-detail">
+              <strong>Stack:</strong> MobileNetV2 / Grad-CAM explainability / Streamlit dashboard / TensorFlow inference pipeline
+            </div>
+            <div class="project-footer">
+              <span class="project-meta">Transfer learning pipeline</span>
+              <span class="impact-badge">MobileNetV2 — ~88% validation accuracy</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="section-label reveal">03 / skills</p>
+        <h2 class="section-title reveal" id="skills-title">What I work with</h2>
+        <div class="skills-grid">
+
+          <!-- Languages — full width -->
+          <div class="skill-card cat-lang wide reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">&lt;/&gt;</div>
+              <span class="skill-card-title">Languages</span>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-card cat-ml reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">ML</div>
+              <span class="skill-card-title">ML &amp; AI</span>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">scikit-learn</span>
+              <span class="skill-pill">OpenCV</span>
+              <span class="skill-pill">Computer Vision</span>
+              <span class="skill-pill">RAG Systems</span>
+              <span class="skill-pill">Model Evaluation</span>
+            </div>
+          </div>
+
+          <div class="skill-card cat-data reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">DS</div>
+              <span class="skill-card-title">Data Engineering</span>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Feature Engineering</span>
+              <span class="skill-pill">Data Pipelines</span>
+              <span class="skill-pill">ETL Workflows</span>
+            </div>
+          </div>
+
+          <div class="skill-card cat-be reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">API</div>
+              <span class="skill-card-title">Backend &amp; Systems</span>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Docker</span>
+            </div>
+          </div>
+
+          <div class="skill-card cat-cloud reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">OPS</div>
+              <span class="skill-card-title">Cloud &amp; DevOps</span>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">AWS</span>
+              <span class="skill-pill">Linux</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">CI/CD Fundamentals</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="section-label reveal">04 / contact</p>
+        <h2 class="section-title reveal" id="contact-title">Let's Talk</h2>
+        <p class="contact-sub reveal">
+          Open to collaborations, freelance work, and technical discussions on systems design, ML infrastructure, and backend engineering.
+        </p>
+        <div class="reveal">
+          <a href="mailto:pratikpadhi00@gmail.com" class="contact-email">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            pratikpadhi00@gmail.com
+          </a>
+        </div>
+        <div class="contact-links reveal">
+          <a href="https://www.linkedin.com/in/pratikpadhi00" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/pratikk-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span>Built by Pratik Padhi</span>
+    <span class="footer-dot">&middot;</span>
+    <!-- BUG FIX: Year is now set dynamically by main.js so it never goes stale -->
+    <span id="footer-year">2026</span>
+    <span class="footer-dot">&middot;</span>
+    <span class="footer-status"><span class="status-dot" aria-hidden="true"></span>Open to opportunities</span>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <!-- Deferred JS — load after DOM is ready -->
+  <script src="main.js" defer></script>
+</body>
+</html>
