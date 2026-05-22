@@ -182,11 +182,12 @@
 
   /* ── Typewriter ── */
   const roles = [
-    'AI Systems Developer',
-    'Backend & ML Engineer',
-    'Computer Vision Developer',
-    'ML Infrastructure Builder',
-    'Data Systems Engineer',
+    'Data & AI Systems Builder',
+    'Full Stack Engineer',
+    'Backend & Analytics',
+    'Applied ML Developer',
+    'Intelligent Systems Engineer',
+    'Data-Driven Product Builder',
   ];
   const typed = document.getElementById('typed-role');
   let roleIndex = 0;
