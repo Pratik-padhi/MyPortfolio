@@ -11,7 +11,7 @@
  *  4. Reveal observer: hero section reveals were force-added after observer
  *     setup, but the hero .reveal elements were never unobserved, causing them
  *     to trigger the observer again on scroll-back. Fixed with unobserve call.
- *  5. Footer year hardcoded as "2025". Updated to dynamic current year.
+ *  5. Footer year hardcoded as "2025". Updated to dynamic current year. 
  *  6. Mobile drawer: clicking a link didn't close on anchor navigation because
  *     the scroll happens after the click. No change needed here — it was fine.
  *  7. Scroll progress: division-by-zero guard when page has no scrollable height.
