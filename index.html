@@ -57,6 +57,22 @@
   --glass-blur:blur(26px) saturate(130%);
   --glass-radius:clamp(14px,2vh,22px);
   --glass-shadow:0 2px 10px rgba(0,0,0,.44), 0 0 0 3px rgba(255,255,255,.035) inset, 0 0 0 1px rgba(0,0,0,.9);
+  /* Header-scoped glass — a true translucent frost. Shared tokens above stay
+     untouched for .demo-card / .glass-card / .lb-panel. Fill alpha sits in the
+     .12-.34 band so hero video reads through; the heavy blur + saturation do
+     the frosted work instead of opacity. */
+  --header-glass-fill:
+    linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.04) 30%, rgba(255,255,255,0) 52%),
+    linear-gradient(145deg, rgba(28,40,42,.28), rgba(6,13,15,.32));
+  --header-glass-whisper:
+    linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.015) 42%, rgba(255,255,255,0) 60%),
+    linear-gradient(145deg, rgba(28,40,42,.12), rgba(6,13,15,.14));
+  --header-glass-border:1px solid rgba(255,255,255,.16);
+  --header-glass-whisper-border:1px solid rgba(255,255,255,.09);
+  --header-glass-blur:blur(34px) saturate(165%);
+  --header-glass-whisper-blur:blur(18px) saturate(140%);
+  --header-glass-shadow:0 10px 34px rgba(0,0,0,.38), 0 1px 0 rgba(255,255,255,.13) inset, 0 -1px 0 rgba(0,0,0,.16) inset;
+  --header-glass-whisper-shadow:0 4px 18px rgba(0,0,0,.22), 0 1px 0 rgba(255,255,255,.07) inset;
   /* Header gutters live on :root now that the header is fixed to the viewport. */
   --gutter-start:clamp(36px,4.177vw,96px);
   --gutter-end:clamp(36px,4.04vw,96px);
@@ -147,15 +163,17 @@ a:hover,button:hover{filter:brightness(1.08)}
   position:fixed;top:var(--header-top);left:var(--gutter-start);right:var(--gutter-end);
   min-height:48px;display:flex;align-items:flex-start;white-space:nowrap;z-index:100;
   padding:6px 10px 10px;border-radius:14px;
-  border:1px solid transparent;background:transparent;
-  transition:background-color 240ms ease,border-color 240ms ease,box-shadow 240ms ease;
+  border:var(--header-glass-whisper-border);background:var(--header-glass-whisper);
+  backdrop-filter:var(--header-glass-whisper-blur);-webkit-backdrop-filter:var(--header-glass-whisper-blur);
+  box-shadow:var(--header-glass-whisper-shadow);
+  transition:background 240ms ease,border-color 240ms ease,box-shadow 240ms ease,backdrop-filter 240ms ease;
 }
 .header.scrolled{
-  border:var(--glass-border);background:var(--glass-fill);
-  backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);
-  box-shadow:var(--glass-shadow);
+  border:var(--header-glass-border);background:var(--header-glass-fill);
+  backdrop-filter:var(--header-glass-blur);-webkit-backdrop-filter:var(--header-glass-blur);
+  box-shadow:var(--header-glass-shadow);
 }
-.brand{position:relative;top:10px;display:inline-flex;filter:drop-shadow(0 1px 2px rgba(0,0,0,.3));border-radius:50%}
+.brand{position:relative;top:10px;display:inline-flex;filter:drop-shadow(0 1px 3px rgba(0,0,0,.65)) drop-shadow(0 2px 10px rgba(0,0,0,.4));border-radius:50%}
 .brand svg{display:block;border-radius:50%}
 .header-actions{display:flex;align-items:flex-start;flex:1;min-width:0}
 .nav{
@@ -167,7 +185,7 @@ a:hover,button:hover{filter:brightness(1.08)}
   font-family:"Archivo",Arial,sans-serif;
   font-size:16px;font-weight:430;letter-spacing:-.36px;
   color:rgba(229,229,230,.77);text-decoration:none;
-  text-shadow:0 1px 3px rgba(0,0,0,.55);
+  text-shadow:0 1px 2px rgba(0,0,0,.78), 0 2px 14px rgba(0,0,0,.55);
   position:relative;padding-bottom:8px;line-height:1.2;
 }
 .nav a:first-child{position:relative;top:-3px}
@@ -187,12 +205,13 @@ a:hover,button:hover{filter:brightness(1.08)}
   font-family:"Archivo",Arial,sans-serif;
   font-size:15px;font-weight:420;letter-spacing:-.3px;
   color:rgba(240,240,240,.77);line-height:1.2;
+  text-shadow:0 1px 2px rgba(0,0,0,.7), 0 2px 10px rgba(0,0,0,.45);
 }
 .time-value{
   font-family:"Archivo",Arial,sans-serif;
   font-size:15px;font-weight:440;letter-spacing:-.3px;
   color:rgba(255,255,255,.93);line-height:1.3;
-  text-shadow:0 1px 3px rgba(0,0,0,.55);font-variant-numeric:tabular-nums;
+  text-shadow:0 1px 2px rgba(0,0,0,.8), 0 2px 14px rgba(0,0,0,.55);font-variant-numeric:tabular-nums;
 }
 .resume-cta{
   display:inline-flex;align-items:center;justify-content:center;
@@ -1042,7 +1061,7 @@ html.js-reveal .reveal.in.d2{transition-delay:160ms}
           <li><a href="https://linkedin.com/in/pratikpadhi00" target="_blank" rel="noopener noreferrer"><span>linkedin.com/in/pratikpadhi00</span><span>LinkedIn →</span></a></li>
           <li><a href="tel:+917894139410"><span>+91 78941 39410</span><span>Phone →</span></a></li>
           <li><a href="assets/Pratik_Padhi_Resume_Master.pdf" target="_blank" rel="noopener"><span>Résumé (PDF)</span><span>Open →</span></a></li>
-          <li><a href="https://builtbypratik.vercel.app" target="_blank" rel="noopener noreferrer"><span>builtbypratik.vercel.app</span><span>Site →</span></a></li>
+          <li><a href="https://whoispratik.vercel.app" target="_blank" rel="noopener noreferrer"><span>whoispratik.vercel.app</span><span>Site →</span></a></li>
         </ul>
       </div>
     </div>
